@@ -32,7 +32,7 @@ mongoose.connect(dbConfig.url, {
 
 // define a simple route
 app.get('/', (req, res) => {
-    res.json({"message": "Welcome to application."});
+    res.render({"message": "Welcome to application."});
 });
 
 require('./app/routes/Classroom.routes.js')(app);
